@@ -513,4 +513,18 @@ footer {
   nav {
     padding: 12px 15px !important;
   }
+/* FIX: Mobile grid wrapping issue */
+@media (max-width: 500px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)) !important;
+    gap: 15px !important;
+  }
+
+  .gallery img {
+    height: 180px !important;
+  }
+
+  .item {
+    padding: 8px !important;
+  }
 }
