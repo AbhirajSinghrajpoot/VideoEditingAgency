@@ -28,6 +28,13 @@ nav {
   font-size: 26px;
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+/* ADD THIS FOR CLICKABLE LOOK */
+.logo {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
   text-decoration: none;
   color: #fff;
   cursor: pointer;
@@ -41,7 +48,6 @@ nav .menu {
   list-style: none;
   display: flex;
   gap: 30px;
-  align-items: center;
 }
 
 nav .menu li a {
@@ -155,6 +161,7 @@ section {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
+
 /* PORTFOLIO PREVIEW */
 .portfolio-preview {
   text-align: center;
@@ -188,6 +195,7 @@ footer {
   margin-top: auto;
 }
 
+
 /* PORTFOLIO PAGE SPECIFIC */
 .portfolio-header {
   text-align: center;
@@ -220,19 +228,19 @@ footer {
   color: #000;
 }
 
-/* GALLERY – MAIN RESPONSIVE GRID */
+/* GALLERY */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
   max-width: 1400px;
   margin: 20px auto 40px;
-  padding: 0 16px;
+  padding: 0 20px;
 }
 
 .item {
   background: #000000;
-  padding: 10px;
+  padding: 12px;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.221);
   transition: 0.3s ease;
@@ -245,7 +253,7 @@ footer {
 
 .gallery img {
   width: 100%;
-  height: 320px;
+  height: 380px;
   object-fit: cover;
   border-radius: 10px;
   cursor: pointer;
@@ -357,8 +365,10 @@ footer {
 
 .brand-box img {
   width: 100%;
-  height: 90px;         /* Equal height */
-  object-fit: contain;  /* No stretch */
+  height: 90px;
+  /* 👈 Fixed equal height */
+  object-fit: contain;
+  /* 👈 No stretch, perfect scaling */
   background: #14142b;
   border-radius: 12px;
   border: 1px solid #2a2a4c;
@@ -378,6 +388,7 @@ footer {
   transform: scale(1.1);
   box-shadow: 0px 0px 12px #d3bebe48;
 }
+
 
 /* CONTACT PAGE */
 .contact {
@@ -423,44 +434,29 @@ footer {
   margin-top: 70px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  nav {
-    padding: 15px 24px;
-  }
 
-  .hero {
-    padding: 60px 16px;
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  nav {
+    padding: 15px 20px;
   }
 
   .hero-content h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .gallery img {
-    height: 280px;
+    height: 300px;
   }
 }
 
-@media (max-width: 700px) {
-  nav {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
+@media (max-width: 500px) {
   nav .menu {
-    gap: 18px;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 15px;
   }
 
-  section {
-    padding: 40px 16px;
-  }
-
-  .gallery {
-    padding: 0 12px;
-    gap: 16px;
+  nav .menu li a {
+    font-size: 14px;
   }
 
   .gallery img {
@@ -468,7 +464,7 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   .hero-content h1 {
     font-size: 26px;
   }
@@ -486,13 +482,4 @@ footer {
     width: 100%;
     text-align: center;
   }
-
-  nav .menu li a {
-    font-size: 14px;
-  }
-
-  .gallery img {
-    height: 220px;
-  }
-    }
-    
+}
