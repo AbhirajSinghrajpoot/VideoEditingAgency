@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editkaro.in | Portfolio</title>
+
+  <meta name="description" content="Editkaro.in portfolio - Reels, Ads, Gaming and Anime video edits." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Editkaro.in</a>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="portfolio-header">
+    <h1>Portfolio</h1>
+    <p class="section-subtext">A showcase of our best video editing work across various categories.</p>
+  </section>
+
+  <!-- FILTER BUTTONS -->
+  <div class="filter-bar">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="reels">Reels</button>
+    <button data-filter="ads">Ads</button>
+    <button data-filter="gaming">Gaming</button>
+    <button data-filter="anime">Anime</button>
+  </div>
+
+  <!-- GALLERY -->
+  <section class="gallery">
+
+    <div class="item reels">
+      <img src="assets/reels/Img1.png" alt="Reels Travel Edit" onclick="openLightbox('assets/reels/vid1.mp4')" />
+    </div>
+
+    <div class="item reels">
+      <img src="assets/reels/TravelImg.png" alt="Reels Travel Vlog" onclick="openLightbox('assets/reels/Travel.mp4')" />
+    </div>
+
+    <div class="item ads">
+      <img src="assets/ads/carImg.png" alt="Car Commercial Edit" onclick="openLightbox('assets/ads/carVid.mp4')" />
+    </div>
+
+    <div class="item ads">
+      <img src="assets/ads/PerfumeImg.png" alt="Perfume Ad 1" onclick="openLightbox('assets/ads/PerfumeVid.mp4')" />
+    </div>
+
+    <div class="item ads">
+      <img src="assets/ads/PerfumeImg2.png" alt="Perfume Ad 2" onclick="openLightbox('assets/ads/PerfumeVid2.mp4')" />
+    </div>
+
+    <div class="item ads">
+      <img src="assets/ads/PerfumeImg3.png" alt="Perfume Ad 3" onclick="openLightbox('assets/ads/PerfumeVid3.mp4')" />
+    </div>
+
+    <div class="item ads">
+      <img src="assets/ads/GymImg.png" alt="Gym Ad" onclick="openLightbox('assets/ads/GymVid.mp4')" />
+    </div>
+
+    <div class="item gaming">
+      <img src="assets/gaming/GotImg.png" alt="Game of Thrones Style Edit"
+        onclick="openLightbox('assets/gaming/GotVid.mp4')" />
+    </div>
+
+    <div class="item gaming">
+      <img src="assets/gaming/GowImg.png" alt="God of War Edit" onclick="openLightbox('assets/gaming/GowVid.mp4')" />
+    </div>
+
+    <div class="item gaming">
+      <img src="assets/gaming/rdr2.png" alt="RDR2 Edit" onclick="openLightbox('assets/gaming/Rdr2Vid.mp4')" />
+    </div>
+
+    <div class="item anime">
+      <img src="assets/anime/BleachImg.png" alt="Bleach Anime Edit"
+        onclick="openLightbox('assets/anime/BleachVid.mp4')" />
+    </div>
+
+    <div class="item anime">
+      <img src="assets/anime/OnepieceImg.png" alt="One Piece Anime Edit"
+        onclick="openLightbox('assets/anime/OnepieceVid.mp4')" />
+    </div>
+
+  </section>
+
+
+  <div id="lightbox" class="lightbox">
+    <span onclick="closeLightbox()">×</span>
+    <video id="videoPlayer" controls autoplay></video>
+  </div>
+
+  <footer>
+    <p>© 2025 Editkaro.in | Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
