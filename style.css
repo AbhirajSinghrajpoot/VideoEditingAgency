@@ -528,3 +528,40 @@ footer {
     padding: 8px !important;
   }
 }
+
+@media (max-width: 480px) {
+
+  nav {
+    padding: 10px 15px !important;
+  }
+
+  .menu {
+    gap: 15px !important;
+  }
+
+  .portfolio-header {
+    margin-top: 0 !important;
+    padding-top: 10px !important;
+  }
+
+  .gallery {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  body {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+}
+@media (max-width: 480px) {
+  .gallery {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 15px !important;
+  }
+
+  .gallery img {
+    height: 180px !important;
+  }
+}
