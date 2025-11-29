@@ -485,7 +485,7 @@ footer {
   }
 }
 /* MOBILE TOP SPACE FIX */
-@media (max-width: 600px) {
+@media (max-width: 432px) {
 
   /* Global section padding reduce */
   section {
