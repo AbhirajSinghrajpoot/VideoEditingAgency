@@ -48,6 +48,7 @@ nav .menu {
   list-style: none;
   display: flex;
   gap: 30px;
+  align-items: center;
 }
 
 nav .menu li a {
@@ -481,5 +482,35 @@ footer {
   .btn {
     width: 100%;
     text-align: center;
+  }
+}
+/* MOBILE TOP SPACE FIX */
+@media (max-width: 600px) {
+
+  /* Global section padding reduce */
+  section {
+    padding-top: 20px !important;
+  }
+
+  /* Portfolio header ka top margin remove */
+  .portfolio-header {
+    margin-top: 5px !important;
+    padding-top: 0 !important;
+  }
+
+  /* Remove any accidental top spacing */
+  body {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Fix gallery gap under navbar */
+  .gallery {
+    margin-top: 10px !important;
+  }
+
+  /* Navbar spacing */
+  nav {
+    padding: 12px 15px !important;
   }
 }
