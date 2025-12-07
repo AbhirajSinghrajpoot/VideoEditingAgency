@@ -266,7 +266,7 @@ section {
 
 /* FOOTER */
 footer {
-  margin-top: 273px ;
+  margin-top: 273px;
   text-align: center;
   left: 0;
   width: 100%;
@@ -528,6 +528,14 @@ footer {
   background: #1ebe5a;
 }
 
+.hamburger {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: white;
+  margin-left: auto;
+}
+
 
 
 
@@ -546,7 +554,7 @@ footer {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   nav .menu {
     gap: 15px;
   }
@@ -557,6 +565,14 @@ footer {
 
   .gallery img {
     height: 250px;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+    margin-left: auto;
   }
 }
 
@@ -640,8 +656,9 @@ footer {
   .gallery img {
     height: 190px !important;
   }
-  footer{
-    margin-top: 72vh ;
+
+  footer {
+    margin-top: 10vh;
   }
 }
 
